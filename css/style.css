@@ -238,7 +238,7 @@ header {
 }
 
 .who-we-are .align-center {
-    width: 90vw;
+    
 }
 
 .who-we-are h2 {
@@ -321,6 +321,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .our-resources-item {
@@ -335,6 +336,7 @@ header {
     border-radius: 15px;
     transition: 0.5s ease-in-out;
     filter: grayscale(1);
+    margin-bottom: 15px;
 }
 
 .our-resources-item:hover {
@@ -401,3 +403,31 @@ header {
     margin: 0;
 }
 /* FOOTER */
+
+@media(max-width: 1024px) {
+
+    .menu {
+        min-width: initial;
+    }
+    .menu a .item-menu {
+        width: 60px;
+    }
+
+    .text-carousel {
+        width: 70vw;
+        left: -11vw;
+    }
+
+    .our-resources-item {
+        width: auto;
+    }
+    
+    .our-resources-item .image-item img{
+        width: 140px;
+        height: auto;
+    }
+
+    .contact-footer {
+        background-position: center;
+    }
+}
