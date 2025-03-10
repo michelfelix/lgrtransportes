@@ -64,3 +64,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 /* FIM ADICIONANDO CLASSE ATIVO NO MENU PARA A SESSÃO ATIVA QUANDO FAZ O SCROLL DA PÁGINA*/
+
+/* INÍCIO FUNCIONAMENTO DO MENU */
+
+$('.toggleMenu').click(function() {
+    $('.menu.mobile').toggleClass('active');
+});
+
+/* FIM FUNCIONAMENTO DO MENU */
