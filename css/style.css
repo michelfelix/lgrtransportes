@@ -416,6 +416,10 @@ header {
 
 @media(max-width: 1024px) {
 
+    .container {
+        width: 95%;
+    }
+
     .menu.desktop,
     .desktop {
         display: none;
@@ -432,7 +436,17 @@ header {
 
     .text-carousel {
         width: 70vw;
-        left: -11vw;
+        height: 30vh;
+        left: 50px;
+        top: 150px;
+        padding: 10px;
+        display: none;
+    }
+    
+    .text-carousel,
+    .text-carousel p {
+        transform: none;
+        font-size: 28px;
     }
 
     .our-resources-item {
@@ -453,10 +467,18 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         width: 100vw;
         height: 100vh;
         transition: 0.5s ease;
+    }
+
+    .menu.mobile .menu a {
+        margin-bottom: 15px;
+    }
+    
+    .menu.mobile .menu a:last-child {
+        margin-bottom: 0;
     }
 
     .menu.mobile {
@@ -479,6 +501,15 @@ header {
     
     .menu.mobile .button-close-menu p {
         color: #ffffff;
-        font-size: 38px;
+        font-size: 28px;
+    }
+
+    .our-team .align-center {
+        flex-direction: column;
+    }
+
+    .text-our-team,
+    .image-our-team {
+        width: 100%;
     }
 }
