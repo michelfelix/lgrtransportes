@@ -39,6 +39,10 @@ body {
     align-items: center;
 }
 
+body section:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
 /* INÍCIO BOTÕES FLUTUANTES COM ÍCONES, WHATSAPP, INSTAGRAM, ETC */
 
 .float-buttons {
@@ -240,21 +244,15 @@ header {
 /* WHO-WE-ARE */
 
 .who-we-are {
-    background-color: #000000;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.who-we-are .align-center {
-    
-}
-
 .who-we-are h2 {
     font-size: 46px;
     margin-bottom: 28px;
-    color: #ffffff;
     text-align: center;
     width: 100%;
 }
@@ -262,7 +260,51 @@ header {
 .who-we-are p {
     font-size: 24px;
     text-align: center;
-    color: #ffffff;
+}
+
+.more-about-us {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0 15px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.item-about-us:first-child {
+    border-radius: 30px 0 0 30px;
+}
+
+.item-about-us:last-child {
+    border-radius: 0 30px 30px 0;
+}
+
+.item-about-us {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    padding: 15px;
+}
+
+.item-about-us:nth-child(even) {
+    filter: invert(1);
+}
+
+.icon-about-us {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-about-us i {
+    font-size: 52px;
+}
+
+.text-about-us p {
+    text-align: center;
+    font-size: 16px;
 }
 
 /* WHO-WE-ARE */
@@ -270,7 +312,6 @@ header {
 /* OUR-TEAM */
 
 .our-team {
-    background-color: #FFFE27;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -511,5 +552,30 @@ header {
     .text-our-team,
     .image-our-team {
         width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .who-we-are,
+    .our-team,
+    .our-resources {
+        padding: 30px 0;
+    }
+
+    .more-about-us {
+        flex-direction: column;
+    }
+
+    .item-about-us:first-child {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .item-about-us:last-child {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .text-our-team {
+        margin-bottom: 30px;
     }
 }
