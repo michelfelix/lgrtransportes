@@ -100,7 +100,7 @@ body section:nth-child(odd) {
 }
 
 .scrolled {
-    background: rgba(0, 0, 0, 0.89);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .adjustment-bar {
