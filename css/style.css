@@ -557,6 +557,14 @@ header {
 
 @media(max-width: 500px) {
 
+    .adjustment-bar {
+        height: 65px;
+    }
+
+    .menu.mobile .button-close-menu {
+        top: 20px;
+    }
+
     .who-we-are,
     .our-team,
     .our-resources {
