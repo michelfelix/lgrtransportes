@@ -18,12 +18,12 @@ body {
 
 .menu.desktop,
 .desktop {
-    display: flex;
+    display: flex!important;
 }
 
 .menu.mobile,
 .mobile {
-    display: none;
+    display: none!important;
 }
 
 .container {
@@ -463,12 +463,12 @@ header {
 
     .menu.desktop,
     .desktop {
-        display: none;
+        display: none!important;
     }
     
     .menu.mobile,
     .mobile {
-        display: flex;
+        display: flex!important;
     }
 
     .adjustment-bar {
